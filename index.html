@@ -18,9 +18,15 @@
     <div class="container">
         <div class="row">
             <div class="nine columns">
-                &nbsp;
+            <ul class="navbar-list">
+                <li class="navbar-item"><a class="navbar-link" href="/">DEEP as a Service</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="https://deep-hybrid-datacloud.eu/">Project page</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="https://docs.deep-hybrid-datacloud.eu/">Docs</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="https://marketplace.deep-hybrid-datacloud.eu/">Marketplace</a></li>
+            </ul>
             </div>
             <div class="three columns logo">
+                <img src="./files/logo-deep-solid-white.png" class="logo"/>
             </div>
         </div>
     </div>
@@ -29,32 +35,35 @@
 <section id="header" class="header">
 <div class="container section">
     <div class="row">
-        <div class="four columns">
+        <div class="two columns">
             <img class="deep-picture" src="files/deep-cloud.png">
         </div>
-        <div class="eight columns">
+        <div class="ten columns">
             <h1>DEEP as a Service</h1>
-            <img src="https://img.shields.io/badge/-PREVIEW-blue" /> DEEP as a Service</h1>
             <p>
-                Welcome to DEEP as a Service (DEEPaaS)!
+                <img src="https://img.shields.io/badge/-PREVIEW-blue" />
             </p>
             <p>
-                This is a running instance of the DEEP as a Service (DEEPaaS) operated by the
-                <a href="https://deep-hybrid-datacloud.eu/">DEEP-Hybrid-DataCloud project</a>.
-                   Through this instance you can get access to the <a
-                       href="https://marketplace.deep-hybrid-datacloud.eu/">DEEP Open
-                       Catalog</a>
-                modules.
+                Welcome to the preview version of the DEEP as a Service.
             </p>
-            <h2>Available modules</h2>
+        </div>
+    </div>
+</section>
+<section id="content" class="content">
+    <div class="container section">
+        <div class="row">
+            <h2>Available modules and endpoints</h2>
+            <p>
+                You can access the list of deployed <a href="https://marketplace.deep-hybrid-datacloud.eu/">modules</a> in any of the following formats:
+            </p>
             <ul>
-                <li><a href="/api/v1/web/deepaas/deep-oc/list.html">HTML</a></li>
+                <li><a href="/api/v1/web/deepaas/deep-oc/list.html" target="list">HTML</a></li>
                 <li><a href="/api/v1/web/deepaas/deep-oc/list.json">JSON</a></li>
                 <li><a href="/api/v1/web/deepaas/deep-oc/list.text">TXT</a></li>
             </ul>
+            <iframe width="100%" height="400px" src="about:blank" frameborder="0" name="list"></iframe>
         </div>
     </div>
-</div>
 </section>
         
 <footer id="contentinfo" class="body">
